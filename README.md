@@ -18,9 +18,10 @@ A simple graphical user interface for OpenAI's Whisper speech recognition model,
 
 ## Installation
 
+### Windows
 1. Clone this repository:
    ```
-   git clone https://github.com/yourusername/whisper-gui.git
+   git clone https://github.com/Traderaiexe/whisper-gui.git
    cd whisper-gui
    ```
 
@@ -34,12 +35,40 @@ A simple graphical user interface for OpenAI's Whisper speech recognition model,
    - **macOS**: `brew install ffmpeg`
    - **Linux**: `sudo apt install ffmpeg` or equivalent for your distribution
 
+### macOS
+1. Install Homebrew (if not already installed):
+```bash
+/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
+```
+
+1. Clone this repository:
+```bash
+git clone https://github.com/yourusername/whisper-gui.git
+cd whisper-gui
+```
+
+2. Install the required dependencies:
+   ```
+   pip3 install -r requirements.txt
+   ```
+
+3. Install FFmpeg (if not already installed):
+   - **Windows**: Download from [ffmpeg.org](https://ffmpeg.org/download.html) and add to PATH
+   - **macOS**: `brew install ffmpeg`
+   - **Linux**: `sudo apt install ffmpeg` or equivalent for your distribution
+
 ## Usage
 
+### Windows/macOS
 1. Run the application:
-   ```
-   python whisper_gui.py
-   ```
+   - **Windows**:
+     ```
+     python whisper_gui.py
+     ```
+   - **macOS**:
+     ```bash
+     python3 whisper_gui.py
+     ```
 
 2. Select your preferred language (English or Italian)
 3. Choose a Whisper model (or use the recommended one)
